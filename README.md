@@ -1,15 +1,25 @@
-# Solitaire Game
+# 🃏 Card Deck Games
 
-A web-based Solitaire game built with **React**, **TypeScript**, and **Vite**. This project recreates the classic single-player card game with a clean interface and interactive gameplay.
+A collection of classic card games built with **React**, **TypeScript**, and **Vite**. This project brings together several popular single-player and multiplayer card games in one modern web application with a clean, responsive interface.
+
+## Games Included
+
+- ♠️ Solitaire (Klondike)
+- 🕷️ Spider Solitaire
+- ♥️ Hearts
+- ♠️ Spades
+- 🃏 Poker
+
+Each game follows its traditional rules while providing an interactive and user-friendly experience.
 
 ## Features
 
-- Classic Solitaire card layout
-- Interactive card movement
-- Stock, waste, tableau, and foundation piles
-- Responsive web interface
-- Built with modern frontend tools
-- Styled with CSS and UI components
+- Multiple classic card games in one application
+- Modern and responsive user interface
+- Interactive card animations and gameplay
+- Reusable card and deck components
+- Built with TypeScript for improved reliability
+- Fast development and build process using Vite
 
 ## Tech Stack
 
@@ -18,13 +28,14 @@ A web-based Solitaire game built with **React**, **TypeScript**, and **Vite**. T
 - Vite
 - CSS
 - Material UI
-- shadcn/ui components
+- shadcn/ui
 
 ## Getting Started
 
 ### Prerequisites
 
-Make sure you have **Node.js** and **npm** installed.
+- Node.js (v18 or later recommended)
+- npm
 
 ### Installation
 
@@ -34,7 +45,7 @@ Clone the repository:
 git clone https://github.com/Prinstar/card-deck-games.git
 ```
 
-Navigate into the project folder:
+Navigate to the project directory:
 
 ```bash
 cd card-deck-games
@@ -52,55 +63,84 @@ Start the development server:
 npm run dev
 ```
 
-Open the local server URL shown in your terminal to play the game.
+Open the local development URL displayed in your terminal (typically `http://localhost:5173`).
 
-## Available Scripts
-
-```bash
-npm run dev
-```
-
-Starts the development server.
+## Build for Production
 
 ```bash
 npm run build
 ```
 
-Builds the project for production.
+To preview the production build:
+
+```bash
+npm run preview
+```
 
 ## Project Structure
 
 ```text
 card-deck-games/
 ├── src/
-├── guidelines/
-├── index.html
+│   ├── components/
+│   ├── games/
+│   │   ├── solitaire/
+│   │   ├── spider/
+│   │   ├── hearts/
+│   │   ├── poker/
+│   │   └── spades/
+│   ├── assets/
+│   └── ...
+├── public/
 ├── package.json
 ├── vite.config.ts
-├── default_shadcn_theme.css
-├── ATTRIBUTIONS.md
 └── README.md
 ```
 
-## How to Play
+## Gameplay
 
-The goal of Solitaire is to move all cards into the foundation piles, organized by suit from Ace to King.
+### Solitaire (Klondike)
+Arrange all cards into four foundation piles by suit from Ace to King.
 
-Basic rules:
+### Spider Solitaire
+Build complete sequences of cards from King to Ace to remove them from the table.
 
-- Build tableau columns in descending order.
-- Alternate card colors when stacking cards.
-- Move Aces to the foundation piles first.
-- Build each foundation pile upward by suit.
-- Draw from the stock pile when no moves are available.
-- Win by moving all cards to the foundations.
+### Hearts
+Avoid collecting hearts and the Queen of Spades while trying to finish with the lowest score.
 
-## Credits
+### Spades
+A trick-taking partnership game where spades are always the trump suit.
 
-This project was generated from a Figma design bundle. The original design is linked in the existing project README. Some components are from **shadcn/ui**, and images may be sourced from **Unsplash**.
+### Poker
+Play classic poker using standard hand rankings such as Pair, Straight, Flush, Full House, Four of a Kind, and Royal Flush.
+
+## Future Improvements
+
+- Additional card games
+- Multiplayer support
+- AI opponents
+- Game statistics and achievements
+- Save and resume games
+- Sound effects and animations
+- Dark mode
+- Accessibility improvements
+
+## Contributing
+
+Contributions are welcome.
+
+1. Fork the repository.
+2. Create a feature branch.
+3. Commit your changes.
+4. Push your branch.
+5. Open a Pull Request.
+
+## License
+
+This project is licensed under the MIT License unless otherwise specified.
 
 ## Author
 
-Created by **Prinstar**.
+**Prinstar**
 
-GitHub: https://github.com/Prinstar
+GitHub: https://github.com/Prinstar/card-deck-games
